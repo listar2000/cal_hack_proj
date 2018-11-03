@@ -5,7 +5,7 @@
             <h1 style="color:#2E7D32">
             To search the information, type the number of the tree:
         </h1>
-        <form style="color:#424242 size: 7">
+        <form method="post" action="{{ url_for('search_tree') }}" style="color:#424242 size: 7">
             Tree number:<input type="text" name="tree_number">
             <input type="submit" value="Submit">
         </form>
