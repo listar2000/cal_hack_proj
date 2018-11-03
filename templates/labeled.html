@@ -1,0 +1,36 @@
+{% extends "index.html" %}
+{% block content %}
+    <div class="mdui-container mdui-m-t-3">
+        <div class="mdui-card mdui-m-t-2 mdui-m-x-1 mdui-m-mdui-col-xs-12 mdui-col-m-6">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title"> Registered ID:</div>>
+                <div class="mdui-card-primary-subtitle">
+                    <p> {{tree.tree_id}}%</p>>
+                </div>
+                <div class="mdui-card-primary-title"> Zip Code:</div>>
+                <div class="mdui-card-primary-subtitle">
+                    <p> {{tree.zipcode}}%</p>>
+                </div>
+                <div class="mdui-card-primary-title"> Location:</div>>
+                <div class="mdui-card-primary-subtitle">
+                    <p> {{tree.created_at}}%</p>
+                </div>
+                 <div class="mdui-card-primary-title"> Health Rate:</div>>
+                <div class="mdui-card-primary-subtitle">
+                    <p> {{tree.health}}%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% extends "index.html" %}
+{% block content %}
+ <div class="mdui-card mdui-m-t-2 mdui-m-x-1 mdui-m-mdui-col-xs-12 mdui-col-m-6">
+     <div class="mdui-card-primary">
+        <div class ="mdui-card-primary-title">
+        The number of the tree is not identified, please check the number again.
+        </div>>
+     </div>
+ </div>
+{% endblock %}
