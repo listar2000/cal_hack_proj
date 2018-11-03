@@ -5,6 +5,7 @@ password_str = 'XBWXbs70mrll3nLBalIVymHl9ghjF2E4jpCVbRh9'
 host_str = 'use2-api.mapd.cloud'
 dbname_str = 'mapd'
 cursor = None
+
 def get_cursor():
     global cursor
     if not cursor:
