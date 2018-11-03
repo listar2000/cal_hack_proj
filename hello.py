@@ -1,3 +1,3 @@
-def hello(name):
+def hella(name):
     assert isinstance(name, str)
-    print('hello! {}'.format(name))
+    print('hallo! {}'.format(name))
