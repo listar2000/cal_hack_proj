@@ -2,7 +2,7 @@ from flask import Flask, render_template, redirect, request, url_for
 from helper import *
 from tree import tree
 
-app = Flask('treeApp')
+app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
@@ -18,4 +18,11 @@ def search_tree():
 def show_tree(tree_id):
     tree_results = select_tree(tree_id)
     trees = [tree(data) for data in tree_results] # construct trees
-    return render_template('labeled.html', trees=trees)
+    print('hello', trees)
+    if trees:
+        return render_template('labeled.html', trees=trees)
+    else:     
+        return render_template('error.html')
+
+if __name__ == '__main__':
+	app.run(debug = True)
